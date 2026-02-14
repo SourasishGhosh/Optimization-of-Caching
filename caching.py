@@ -72,7 +72,7 @@ def root():
         return jsonify({
             'answer': '',
             'cached': False,
-            'latency': 0,
+            'latency': 1,
             'cacheKey': None
         }), 200
 
@@ -155,3 +155,4 @@ def analytics():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
+
